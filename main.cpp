@@ -48,15 +48,18 @@ int main()
     //1-B-1.  turn should be assigned the value 'O'
     //1-C.  In any other case, then...
     //1-C-1.  turn should be assigned the value 'X'
-
-    board[row][column] = turn;
-    if(turn == X)
-    {
-      turn = O;
-    }
+    
     else
     {
-      turn = X;
+      board[row][column] = turn;
+      if(turn == X)
+      {
+        turn = O;
+      }
+      else
+      {
+        turn = X;
+      }
     }
 
     cout<<"\nBOARD\n-----\n";
